@@ -14,6 +14,8 @@ interface IMyTextField {
   error?: boolean
   errorMSg?: string
 }
+
+// custom components to keep the logic together and will help us maintain large code and improve readability
 export default function MyTextField (props: IMyTextField) {
   const { type = 'text', label, name, value, onChange, errorMSg, error = false, ...others } = props
   console.log({ ...others })

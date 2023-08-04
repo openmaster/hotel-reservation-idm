@@ -9,14 +9,17 @@ interface IReservationDetails {
 }
 
 export default function ReservationDetails ({ reservation }: IReservationDetails) {
+  // custom hook to manage dialog operations.
   const {
     openDialog,
     formValues,
     setFormValues,
     handleDialogOpen,
     handleDialogClose
-  } = useDialog(reservation) // custom hook to manage dialog operations.
-  const { updateReservation } = useStateData(handleDialogClose) // custom hook that use rxjs for state manupulations.
+  } = useDialog(reservation)
+
+  // custom hook for state manipulation.
+  const { updateReservation } = useStateData(handleDialogClose)
 
   return (
     <>

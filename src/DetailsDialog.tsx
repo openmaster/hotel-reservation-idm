@@ -1,5 +1,4 @@
 import Button from '@mui/material/Button'
-
 import Dialog from '@mui/material/Dialog'
 import DialogActions from '@mui/material/DialogActions'
 import DialogContent from '@mui/material/DialogContent'
@@ -31,7 +30,7 @@ export default function DetailsDialog (props: IDetailsDialog) {
   const { formValues, setFormValues, openDialog, handleDialogClose, handleData, addNew } = props
 
   const { validLength, validEmail } = useFormValidation()
-  // using basic validation as instruction suggests. we can use library like 'react-hook-forms' for better implementation.
+  // using basic validation as instruction suggests. we can also use library like 'react-hook-forms'.
   const error = validLength(formValues.firstName) || validLength(formValues.lastName) || validEmail(formValues.email)
 
   const paymentRadioTypes: PaymentRadioTypes[] = [

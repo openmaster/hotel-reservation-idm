@@ -13,6 +13,8 @@ interface IMyRadioGroup {
   onChange: any
   items: PaymentRadioTypes[]
 }
+
+// custom components to keep the logic together and will help us maintain large code and improve readability
 export default function MyRadioGroup (props: IMyRadioGroup) {
   const { name, label, value, onChange, items } = props
   return (

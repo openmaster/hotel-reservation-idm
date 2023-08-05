@@ -1,7 +1,7 @@
 {
   "name": "hotel-reservation",
   "version": "0.1.0",
-  "homepage": "https://github.com/openmaster/hotel-reservation-idm",
+  "homepage": "https://openmaster.github.io/hotel-reservation-idm",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",

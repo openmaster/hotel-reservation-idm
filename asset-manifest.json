@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/openmaster/hotel-reservation-idm/static/css/main.682955a1.css",
-    "main.js": "/openmaster/hotel-reservation-idm/static/js/main.397eec37.js",
-    "index.html": "/openmaster/hotel-reservation-idm/index.html",
-    "main.682955a1.css.map": "/openmaster/hotel-reservation-idm/static/css/main.682955a1.css.map",
-    "main.397eec37.js.map": "/openmaster/hotel-reservation-idm/static/js/main.397eec37.js.map"
+    "main.css": "/hotel-reservation-idm/static/css/main.682955a1.css",
+    "main.js": "/hotel-reservation-idm/static/js/main.397eec37.js",
+    "index.html": "/hotel-reservation-idm/index.html",
+    "main.682955a1.css.map": "/hotel-reservation-idm/static/css/main.682955a1.css.map",
+    "main.397eec37.js.map": "/hotel-reservation-idm/static/js/main.397eec37.js.map"
   },
   "entrypoints": [
     "static/css/main.682955a1.css",

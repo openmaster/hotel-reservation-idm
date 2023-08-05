@@ -40,7 +40,6 @@ export default function SearchResults ({ reservations }: ISearchResults) {
                     <br />
                     {`${reservation.room.roomSize} - ${reservation.room.roomQuantity} - Ph: ${reservation.phone}`}
                   </p>
-
                   <DeleteReservation id={reservation.id} />
                   <ReservationDetails reservation={reservation} />
                 </>

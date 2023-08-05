@@ -4,6 +4,7 @@ import { newReservation } from '../data'
 
 export const subject = new Subject()
 
+// used rxjs for data manipulation as per the instructions.
 export const DataService = {
   changeData: (data: InitData[]) => { subject.next(data) },
   onData: () => subject.asObservable()

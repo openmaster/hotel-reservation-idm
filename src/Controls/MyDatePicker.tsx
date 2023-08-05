@@ -10,6 +10,8 @@ interface IMyDatePicker {
   minDate?: any
   disabled?: boolean
 }
+
+// custom components to keep the logic together and will help us maintain large code and improve readability
 export default function MyDatePicker (props: IMyDatePicker) {
   const { value, label, onChange, minDate, disabled = false } = props
   return (

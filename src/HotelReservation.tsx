@@ -11,6 +11,7 @@ export default function HotelReservation () {
   const searchedList = handleSearch(searchedTxt)
 
   function handleSearch (txt: string) {
+    // filter list for search functionality
     return dataList.filter((d) =>
       d.firstName.toLocaleLowerCase().includes(txt.toLocaleLowerCase()) ||
       d.lastName.toLocaleLowerCase().includes(txt.toLocaleLowerCase()) ||

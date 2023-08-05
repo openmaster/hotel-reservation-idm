@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import { async } from 'q';
 
 test('Should have title', async ({ page }) => {
   await page.goto('http://localhost:3000/');

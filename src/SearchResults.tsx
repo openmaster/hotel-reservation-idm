@@ -31,7 +31,7 @@ export default function SearchResults ({ reservations }: ISearchResults) {
                   <small style={{ textAlign: 'right' }}>
                     Ph: {reservation.phone}
                   </small>
-                  <p>
+                  <span style={{ display: 'block', marginTop: '1em' }}>
                     {`Arrival: ${dateTimeFormate(
                       reservation.stay.arrivalDate
                     )} - Departure: ${dateTimeFormate(
@@ -39,7 +39,7 @@ export default function SearchResults ({ reservations }: ISearchResults) {
                     )}`}
                     <br />
                     {`${reservation.room.roomSize} - ${reservation.room.roomQuantity} - Ph: ${reservation.phone}`}
-                  </p>
+                  </span>
                   <DeleteReservation id={reservation.id} />
                   <ReservationDetails reservation={reservation} />
                 </>

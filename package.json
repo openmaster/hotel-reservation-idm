@@ -1,6 +1,7 @@
 {
   "name": "hotel-reservation",
   "version": "0.1.0",
+  "homepage": "https://openmaster.github.io/hotel-reservation-idm",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
@@ -24,6 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -58,6 +61,7 @@
     "eslint-plugin-n": "^16.0.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.1",
+    "gh-pages": "^5.0.0",
     "typescript": "^5.1.6"
   }
 }

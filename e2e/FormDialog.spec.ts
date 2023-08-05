@@ -1,14 +1,16 @@
-import { test, expect } from '@playwright/test';
+import { test, expect  } from '@playwright/test';
+
+const pageUrl = "/hotel-reservation-idm"
 
 test('Should have title', async ({ page }) => {
-  await page.goto('http://localhost:3000/');
+  await page.goto(pageUrl);
   const addButton = page.getByRole('button', { name: 'Add New Reservation' });
   await addButton.click()
   await expect(page.getByRole('heading', { name: 'Your Reservation Details' })).toBeInViewport()
 });
 
 test('Should have all the required form controls', async ({ page }) => {
-  await page.goto('http://localhost:3000/');
+  await page.goto(pageUrl);
   const addButton = page.getByRole('button', { name: 'Add New Reservation' });
   await addButton.click()
 
@@ -65,7 +67,7 @@ const emailCheckData: IUserInputs[] =[
 
 const validationCheck = async (testTitle: string, label: RegExp, errorMsg: RegExp, usrInput: IUserInputs[] | string) => {
   test(testTitle, async ({ page }) => {
-    await page.goto('http://localhost:3000/');
+    await page.goto(pageUrl);
     const addButton = page.getByRole('button', { name: 'Add New Reservation' });
     await addButton.click()
     await page.getByLabel(label).click()

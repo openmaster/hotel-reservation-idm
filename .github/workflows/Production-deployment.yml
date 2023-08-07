@@ -1,5 +1,8 @@
-name: Deployment
-on: [pull_request, push]
+name: Production-Deployment
+on:
+  pull_request:
+    branches:
+      - master
 jobs:
   es-lint:
     runs-on: ubuntu-latest
@@ -43,7 +46,7 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
-  deploy:
+  deployment:
     needs: [es-lint, Unit-tests, e2e-tests]
     concurrency: production
     runs-on: ubuntu-latest

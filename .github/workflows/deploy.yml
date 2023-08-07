@@ -1,12 +1,5 @@
 name: Deployment
-
-on:
-  push:
-    branches:
-      - devoop
-  pull_request:
-    branches:
-      - devoop
+on: [pull_request, push]
 jobs:
   es-lint:
     runs-on: ubuntu-latest
